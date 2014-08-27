@@ -4,6 +4,7 @@
 #include <sstream> // will eventually use this for passing parameters
 #include "Node.h"
 #include "Matrix.h"
+#include "Explorer.h"
 
 using namespace std;
 using namespace VAN_MAASTRICHT;
@@ -11,16 +12,13 @@ using namespace VAN_MAASTRICHT;
 int main(int argc, char* argv[]) {
 	time_t start = time(NULL);
 	Matrix m = Matrix();
-	m.set_size(3);
-	cout << m << endl;
+	m.set_size(8);
+	Node n = Node(m, 0, 1, 0);
+	Explorer *e = new Explorer(n);
+	
+	e->explore();
 
-	Node *n = new Node(m, 0, 1);
-
-	cout << n->data() << endl;
-
-	delete n;
-
-	cout << m << endl;
+	delete e;
 
 	cout << "Time taken: " << time(NULL) - start << endl;
 

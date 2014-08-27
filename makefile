@@ -1,4 +1,4 @@
-SOURCES=test.cpp Matrix.cpp Node.h
+SOURCES=test.cpp Explorer.cpp Matrix.cpp Node.h
 EXECUTABLE=test
 CC=g++
 CFLAGS=-Wall
