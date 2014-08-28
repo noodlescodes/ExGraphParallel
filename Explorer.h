@@ -1,7 +1,7 @@
 #ifndef NATHAN_VAN_MAASTRICHT_EXPLORER
 #define NATHAN_VAN_MAASTRICHT_EXPLORER
 
-#include <queue>
+#include <stack>
 #include "Node.h"
 #include "Matrix.h"
 
@@ -34,7 +34,7 @@ namespace VAN_MAASTRICHT {
 	private:
 		void max_edges_set(); //sets the max_edges_array
 
-		queue<Node> nodes_to_process;
+		stack<Node> nodes_to_process;
 		double explored;
 		double max_to_explore;
 		unsigned long long number_of_solutions;

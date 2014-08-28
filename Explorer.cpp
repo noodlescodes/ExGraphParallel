@@ -60,7 +60,7 @@ namespace VAN_MAASTRICHT {
 
 	void Explorer::explore() {
 		while(number_of_solutions == 0) {
-			Node node = nodes_to_process.front();
+			Node node = nodes_to_process.top();
 			nodes_to_process.pop();
 			if(check_valid(node.data()) && continue_heuristics(node.data(), node.get_depth())) {
 				int size = node.data().size();

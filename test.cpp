@@ -12,7 +12,7 @@ using namespace VAN_MAASTRICHT;
 int main(int argc, char* argv[]) {
 	time_t start = time(NULL);
 	Matrix m = Matrix();
-	m.set_size(8);
+	m.set_size(10);
 	Node n = Node(m, 0, 1, 0);
 	Explorer *e = new Explorer(n);
 	
