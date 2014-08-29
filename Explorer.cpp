@@ -18,7 +18,6 @@ namespace VAN_MAASTRICHT {
 		max_depth = (node.data().size() - 1) * node.data().size() / 2;
 		max_to_explore = pow(2, max_depth);
 		cout << "Max to explore: " << max_to_explore << endl;
-		
 	}
 
 	void Explorer::max_edges_set() {
